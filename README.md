@@ -1,2 +1,1 @@
-# Drupal_Peliculas
-Un sitio web de películas desarrollado en Drupal
+# proyecto_1_Drupal
