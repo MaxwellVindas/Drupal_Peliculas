@@ -1,0 +1,109 @@
+uuid: e3f02f30-1d80-4cbf-aacd-1fa375dab1b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categorias
+    - field.field.node.peliculas.field_destacada
+    - field.field.node.peliculas.field_director
+    - field.field.node.peliculas.field_escenario_
+    - field.field.node.peliculas.field_fecha
+    - field.field.node.peliculas.field_portada
+    - field.field.node.peliculas.field_puntuacion
+    - field.field.node.peliculas.field_reparto
+    - field.field.node.peliculas.field_tipo
+    - node.type.peliculas
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.peliculas.default
+targetEntityType: node
+bundle: peliculas
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categorias:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_director:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_escenario_:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fecha:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_portada:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_puntuacion:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_reparto:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tipo:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_destacada: true

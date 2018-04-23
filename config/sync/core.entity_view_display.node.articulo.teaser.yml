@@ -1,0 +1,28 @@
+uuid: 55c0e487-03b5-432d-b9f3-bcc29c40a8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo.body
+    - node.type.articulo
+  module:
+    - text
+    - user
+id: node.articulo.teaser
+targetEntityType: node
+bundle: articulo
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: ad210b0b-d675-412c-9df8-033f755a1dad
+langcode: en
+status: true
+dependencies: {  }
+name: imagen_destacadas
+label: 'Imagen Destacadas'
+effects:
+  f9c92b51-222e-40f0-ac1a-24ffd059648c:
+    uuid: f9c92b51-222e-40f0-ac1a-24ffd059648c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 200

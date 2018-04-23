@@ -1,0 +1,19 @@
+uuid: 17105f05-555e-4474-908d-efe14de2af56
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_peliculas_escenario
+field_name: field_peliculas_escenario
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

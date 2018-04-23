@@ -1,0 +1,30 @@
+uuid: b53dba59-f70c-49a0-9bb5-dc0adf9d4b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.peliculas_destacadas
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__peliculas_destacadas_block_1
+theme: bartik
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'views_block:peliculas_destacadas-block_1'
+settings:
+  id: 'views_block:peliculas_destacadas-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

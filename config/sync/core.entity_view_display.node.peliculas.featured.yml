@@ -1,0 +1,80 @@
+uuid: 98814422-c2f0-4f11-bd07-5994640c7b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categorias
+    - field.field.node.peliculas.field_destacada
+    - field.field.node.peliculas.field_director
+    - field.field.node.peliculas.field_escenario_
+    - field.field.node.peliculas.field_fecha
+    - field.field.node.peliculas.field_portada
+    - field.field.node.peliculas.field_puntuacion
+    - field.field.node.peliculas.field_reparto
+    - field.field.node.peliculas.field_tipo
+    - node.type.peliculas
+  module:
+    - image
+    - user
+id: node.peliculas.featured
+targetEntityType: node
+bundle: peliculas
+mode: featured
+content:
+  field_categorias:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_director:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_portada:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_puntuacion:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_reparto:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_destacada: true
+  field_escenario_: true
+  field_fecha: true
+  field_tipo: true

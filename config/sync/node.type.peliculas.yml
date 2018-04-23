@@ -1,0 +1,18 @@
+uuid: fd6b0066-929f-4b83-94c1-4f65a2a10bb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Peliculas
+type: peliculas
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,14 @@
+uuid: 4a55eaaa-cd88-4834-bb11-47d53ad5559c
+langcode: en
+status: true
+dependencies: {  }
+name: full_image
+label: 'Full Image'
+effects:
+  8e62f303-40a3-4593-a041-38cb7ae04725:
+    uuid: 8e62f303-40a3-4593-a041-38cb7ae04725
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 600

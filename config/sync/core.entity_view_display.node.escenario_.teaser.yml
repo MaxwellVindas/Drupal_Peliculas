@@ -1,0 +1,28 @@
+uuid: 8814d997-cf70-4f17-97ed-0f6ce940fa54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.escenario_.body
+    - node.type.escenario_
+  module:
+    - text
+    - user
+id: node.escenario_.teaser
+targetEntityType: node
+bundle: escenario_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

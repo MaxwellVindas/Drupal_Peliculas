@@ -1,0 +1,30 @@
+uuid: 381353d2-97ed-4fcb-9307-0667fbcce50a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recientes
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__recientes_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recientes-block_1'
+settings:
+  id: 'views_block:recientes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

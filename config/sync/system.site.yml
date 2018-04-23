@@ -1,0 +1,14 @@
+uuid: a6accc64-8a3e-4039-a008-d1fe96ef4e03
+name: Películas
+mail: maxwellv7745@gmail.com
+slogan: 'Las mejores películas a un click '
+page:
+  403: ''
+  404: ''
+  front: /home-
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

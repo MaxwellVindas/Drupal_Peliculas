@@ -1,0 +1,22 @@
+uuid: f45dc98b-c598-4613-87f4-27a23eebddf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.escenario_
+  module:
+    - text
+id: node.escenario_.body
+field_name: body
+entity_type: node
+bundle: escenario_
+label: Descripcion
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

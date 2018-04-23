@@ -1,0 +1,23 @@
+uuid: 1f861c20-4aec-4d5d-b0ba-f3aba08e792a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edad
+    - node.type.actor
+id: node.actor.field_edad
+field_name: field_edad
+entity_type: node
+bundle: actor
+label: Edad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' Años '
+field_type: integer

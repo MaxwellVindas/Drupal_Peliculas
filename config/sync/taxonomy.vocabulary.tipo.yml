@@ -1,0 +1,9 @@
+uuid: ff94eec8-722f-4813-90a2-73c132b65b9f
+langcode: en
+status: true
+dependencies: {  }
+name: Tipo
+vid: tipo
+description: ''
+hierarchy: 0
+weight: 0

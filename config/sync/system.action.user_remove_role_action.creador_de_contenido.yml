@@ -1,0 +1,14 @@
+uuid: fba4165e-864a-4d53-95d9-95053888cea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.creador_de_contenido
+  module:
+    - user
+id: user_remove_role_action.creador_de_contenido
+label: 'Remove the Creador de Contenido role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: creador_de_contenido

@@ -1,0 +1,14 @@
+uuid: f00d7ac3-a87c-4844-96ca-3e8bb96090a8
+langcode: en
+status: true
+dependencies: {  }
+name: home_image
+label: 'Home Image'
+effects:
+  32d9a5df-5f1c-4935-9283-b0ab98625476:
+    uuid: 32d9a5df-5f1c-4935-9283-b0ab98625476
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 450

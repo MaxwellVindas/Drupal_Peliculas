@@ -1,0 +1,28 @@
+uuid: cd3afcd3-efb9-4487-b4b2-35a4e271078e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_escenario_
+    - node.type.escenario_
+    - node.type.peliculas
+id: node.peliculas.field_escenario_
+field_name: field_escenario_
+entity_type: node
+bundle: peliculas
+label: 'Escenario '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      escenario_: escenario_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
