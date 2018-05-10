@@ -74,7 +74,10 @@ class PaisFormatterType extends FormatterBase {
   protected function viewValue(FieldItemInterface $item) {
     // The text value has no text format assigned to it, so the user input
     // should equal the output, including newlines.
-    return nl2br(Html::escape($item->value));
+//    return nl2br(Html::escape($item->value));
+      $paises= \Drupal::service('country_manager')->getList();
+      $pais= $paises[$item->value];
+      return $pais;
   }
 
 }
