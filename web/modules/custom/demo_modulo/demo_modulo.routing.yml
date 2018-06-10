@@ -1,0 +1,26 @@
+demo.modulo.demo_modulo_controller:
+  path: '/test-page'
+  defaults:
+    _controller: '\Drupal\demo_modulo\Controller\EjemplosModulosController::testDemo'
+    _title: 'Página del modulo'
+  requirements:
+    _permission: 'access content'
+demo_modulo.configuration_form:
+  path: '/admin/config/demo_modulo/configuration'
+  defaults:
+    _form: '\Drupal\demo_modulo\Form\ConfigurationForm'
+    _title: 'ConfigurationForm'
+  requirements:
+    _permission: 'access demo configuration'
+  options:
+    _admin_route: TRUE
+
+#
+#demo_modulo.suscription_form:
+#  path: '/demo_modulo/form/suscription'
+#  defaults:
+#    _form: '\Drupal\demo_modulo\Form\SuscriptionForm'
+#    _title: 'SuscriptionForm'
+#  requirements:
+#    _access: 'TRUE'
+  
